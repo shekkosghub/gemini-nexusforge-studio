@@ -91,7 +91,52 @@ All responses include fallbacks: if no `GEMINI_API_KEY` is set or generation fai
 - [Node.js](https://nodejs.org/) 18+ (or [Bun](https://bun.sh/))
 - A **Google Gemini API** key for AI generation (optional: without it, the app works with fallback templates).
 
-## 🚀 Installation and running
+---
+
+## 👋 No coding experience? Use an AI agent (recommended)
+
+You don't need to know how to program to run this project. If you use an AI coding assistant such as **[Claude Code](https://claude.com/claude-code)**, **[OpenAI Codex](https://openai.com/codex/)**, or **[Google Antigravity](https://antigravity.google/)**, just follow these three steps:
+
+**1. Download the source code**
+
+The easiest way, no Git required:
+
+- Open https://github.com/shekkosghub/gemini-nexusforge-studio
+- Click the green **`<> Code`** button → **Download ZIP**
+- Unzip it into any folder on your computer (e.g. `Downloads/nexusforge`).
+
+*(If you already use Git, you can run `git clone https://github.com/shekkosghub/gemini-nexusforge-studio.git` instead.)*
+
+**2. Open the folder with your AI agent**
+
+| Tool | How to open the project |
+|------|-------------------------|
+| **Claude Code** | Open a terminal inside the unzipped folder and run `claude` |
+| **Codex** | Open the folder in your IDE and start the Codex extension/CLI there |
+| **Antigravity** | Launch Antigravity → *Open Folder* → select the unzipped folder |
+
+**3. Paste this prompt into the agent**
+
+```text
+I have a project called NexusForge Studio in this folder. I am not a
+programmer, please set it up and run it for me:
+
+1. Install Node.js 18+ if it is not installed yet (verify with `node -v`).
+2. Install the dependencies by running `npm install`.
+3. Create a file named `.env` by copying `.env.example`, and ask me for my
+   Google Gemini API key so you can put it in GEMINI_API_KEY. If I don't
+   have one, continue anyway: the app works with built-in fallback templates.
+4. Start the app with `npm run dev`.
+5. Tell me the local URL (usually http://localhost:3000) and open it in my
+   browser.
+6. If anything fails, read the error message, fix it, and try again.
+```
+
+The agent will handle every technical step (installing dependencies, configuring the key, starting the server). When it finishes, a message like *"Local access: http://localhost:3000"* will appear — open that address in your browser and start creating addons.
+
+> 💡 **Tip**: keep the agent's window open while using the app; closing the terminal stops the server. To launch it again later, simply ask the agent: *"start NexusForge Studio again"*.
+
+## 🚀 Installation and running (manual, for developers)
 
 ```bash
 # 1. Install dependencies
