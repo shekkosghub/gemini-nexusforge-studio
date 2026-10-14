@@ -282,6 +282,15 @@ export default function App() {
           <span>NexusForge Studio</span>
           <span aria-hidden="true">·</span>
           <span>Commercial Creative Addon Generator</span>
+          <span aria-hidden="true">·</span>
+          <a
+            href="https://github.com/shekkosghub/gemini-nexusforge-studio"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-slate-400 hover:text-slate-200 underline-offset-2 hover:underline inline-flex items-center gap-1 transition-colors"
+          >
+            GitHub Repository
+          </a>
         </div>
         <div className="flex items-center gap-4 text-[11px] text-slate-500">
           <span>Blender 4.2+ LTS</span>
